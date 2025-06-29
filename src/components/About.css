@@ -1,0 +1,63 @@
+/* About.css */
+
+.about-page {
+    padding: 40px 20px;
+    color: #f0f0f0;
+    background-color: #0f1117;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .about-page h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-page p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .about-page h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .languages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .language-card {
+    background-color: #1c1f26;
+    padding: 20px;
+    border-radius: 12px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .language-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .language-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  
+  .language-card p {
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+  }
+  

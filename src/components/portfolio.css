@@ -1,0 +1,289 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Light Mode */
+body {
+  background-color: #ffffff;
+  color: #0d1117;
+  text-align: center;
+  padding: 0 20px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #0d1117;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode .navbar {
+  background: #161b22;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #58a6ff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+  padding: 140px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #00aaff;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 150px;  /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover; /* Ensures the image is cropped properly */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  margin-bottom: 20px; /* Adds spacing below the image */
+}
+
+
+/* Dark Mode Hero Subtitle */
+body.dark-mode .hero-subtitle {
+  color: #bbb;
+}
+
+/* Button */
+.btn {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00aaff, #0077cc);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 173, 181, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0077cc, #0055aa);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 173, 181, 0.5);
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #00aaff;
+  margin-bottom: 30px;
+}
+
+/* Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #1e1e2f, #161b22);
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 173, 181, 0.3);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .project-card {
+  box-shadow: 0 5px 15px rgba(0, 173, 181, 0.5);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 173, 181, 0.7);
+}
+
+/* Project Title */
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #00aaff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Project Description */
+.project-card p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+/* View Details Button */
+.project-card .btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00aaff, #0077cc);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 173, 181, 0.5);
+}
+
+.project-card .btn:hover {
+  background: linear-gradient(135deg, #0077cc, #0055aa);
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Dark Mode Contact */
+body.dark-mode .contact p {
+  color: #bbb;
+}
+
+.contact a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #f0f0f0;
+  margin-top: 20px;
+}
+
+/* Dark Mode Footer */
+body.dark-mode .footer {
+  background: #161b22;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.tech-stack {
+  padding: 60px 20px;
+  background-color: var(--background);
+  text-align: center;
+}
+
+.tech-stack .section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.stack-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.stack-item p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.stack-item:hover {
+  transform: scale(1.1);
+}
+

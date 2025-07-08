@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Portfolio from "./components/portfolio";
 import Projects from "./components/Projects";
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
@@ -30,6 +31,7 @@ function App() {
           element={<Portfolio darkMode={darkMode} changeTheme={changeTheme} />}
         />
         <Route path="/projects/:projectId" element={<Projects />} />
+
       </Routes>
     </Router>
   );

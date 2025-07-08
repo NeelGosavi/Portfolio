@@ -21,6 +21,9 @@ const Portfolio = ({ darkMode, changeTheme }) => {
           <li><a href="#about">About</a></li>
           <li><a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection("projects"); }}>Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#academics" onClick={(e) => { e.preventDefault(); scrollToSection("academics"); }}>Academics</a></li>
+         
+
         </ul>
         
         {/* Theme Toggle Button */}
@@ -100,6 +103,32 @@ const Portfolio = ({ darkMode, changeTheme }) => {
             </div>
           </div>
       </section>
+
+      <section id="academics" className="academics">
+        <h2 className="section-title">Academics</h2>
+
+        <div className="academics-block">
+          <h3>Currently pursuing B.E in Computer Engineering, Now in T.E</h3>
+          <p>Terna Engineering College, Nerul</p>
+          <p>Total Years 2023 - 2027</p>
+          <p>Sem1 CGPA: 9.06</p>
+          <p>Sem2 CGPA: 9.80</p>
+          <p>1st Year CGPA: 9.43</p>
+          <p>Sem3 CGPA: 10</p>
+        </div>
+
+        <div className="academics-block">
+          <h3>Relevant Coursework</h3>
+          <ul>
+            <p>Data Structures & Algorithms</p>
+            <p>Database Management Systems</p>
+            <p>Operating Systems</p>
+            <p>Web Development</p>
+          </ul>
+        </div>
+
+      </section>
+
 
 
       {/* Contact Section */}

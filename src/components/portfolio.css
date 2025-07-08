@@ -11,7 +11,6 @@
 body {
   background-color: #ffffff;
   color: #0d1117;
-  text-align: center;
   padding: 0 20px;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -38,7 +37,6 @@ body.dark-mode {
   transition: background 0.3s ease-in-out;
 }
 
-/* Dark Mode Navbar */
 body.dark-mode .navbar {
   background: #161b22;
   box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
@@ -97,19 +95,17 @@ body.dark-mode .navbar {
   margin-bottom: 20px;
 }
 
-.hero-image {
-  width: 150px;  /* Set a fixed width */
-  height: 150px; /* Set a fixed height */
-  border-radius: 50%; /* Makes it a perfect circle */
-  object-fit: cover; /* Ensures the image is cropped properly */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-  margin-bottom: 20px; /* Adds spacing below the image */
-}
-
-
-/* Dark Mode Hero Subtitle */
 body.dark-mode .hero-subtitle {
   color: #bbb;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 /* Button */
@@ -170,7 +166,6 @@ body.dark-mode .project-card {
   box-shadow: 0 8px 20px rgba(0, 173, 181, 0.7);
 }
 
-/* Project Title */
 .project-card h3 {
   font-size: 1.5rem;
   color: #00aaff;
@@ -178,14 +173,12 @@ body.dark-mode .project-card {
   font-weight: bold;
 }
 
-/* Project Description */
 .project-card p {
   font-size: 1rem;
   color: #bbb;
   margin-bottom: 15px;
 }
 
-/* View Details Button */
 .project-card .btn {
   padding: 12px 20px;
   font-size: 1rem;
@@ -215,7 +208,6 @@ body.dark-mode .project-card {
   margin-bottom: 20px;
 }
 
-/* Dark Mode Contact */
 body.dark-mode .contact p {
   color: #bbb;
 }
@@ -236,7 +228,6 @@ body.dark-mode .contact p {
   margin-top: 20px;
 }
 
-/* Dark Mode Footer */
 body.dark-mode .footer {
   background: #161b22;
 }
@@ -246,6 +237,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Tech Stack */
 .tech-stack {
   padding: 60px 20px;
   background-color: var(--background);
@@ -287,3 +279,64 @@ html {
   transform: scale(1.1);
 }
 
+/* ======================
+     ACADEMICS SECTION
+========================= */
+.academics {
+  padding: 80px 20px;
+  background-color: #f5f5f5;
+  color: #0d1117;
+}
+
+body.dark-mode .academics {
+  background-color: #161b22;
+  color: white;
+}
+
+.academics h2 {
+  font-size: 2.5rem;
+  color: #00aaff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.academics-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.education-details p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.coursework h4,
+.certifications h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #0077cc;
+}
+
+.coursework ul,
+.certifications ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.coursework li,
+.certifications li {
+  margin-bottom: 6px;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .coursework li,
+body.dark-mode .certifications li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

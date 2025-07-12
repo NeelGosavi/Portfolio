@@ -71,38 +71,55 @@ const Portfolio = ({ darkMode, changeTheme }) => {
 
       {/* Tech Stack Section */}
       <section id="tech-stack" className="tech-stack">
-          <h2 className="section-title">Tech Stack</h2>
-          <div className="stack-grid">
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-              <p>HTML</p>
-            </div>
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-              <p>CSS</p>
-            </div>
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-              <p>JavaScript</p>
-            </div>
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-              <p>Python</p>
-            </div>
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-              <p>Java</p>
-            </div>
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-              <p>SQL</p>
-            </div>
-            <div className="stack-item">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
-              <p>Firebase</p>
-            </div>
+        <h2 className="section-title">Tech Stack</h2>
+        <div className="stack-grid">
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            <p>HTML</p>
           </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            <p>CSS</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <p>Python</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <p>Java</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <p>React</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <p>Node.js</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="MERN" />
+            <p>MERN</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+            <p>Flask</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+            <p>Firebase</p>
+          </div>
+          <div className="stack-item">
+            <img src="https://cdn2.iconfinder.com/data/icons/data-organisation-flat/60/Structured-Data-structured-database-databases-hierarchy-1024.png" alt="Data Structures" />
+            <p>Data Structures</p>
+          </div>
+        </div>
       </section>
+
 
       <section id="academics" className="academics">
         <h2 className="section-title">Academics</h2>
